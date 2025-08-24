@@ -1,40 +1,44 @@
-# Search a 2D Matrix II (Medium)
+# Koko Eating Bananas (Medium)
 
 ---
 
-<p>Write an efficient algorithm that searches for a value <code>target</code> in an <code>m x n</code> integer matrix <code>matrix</code>. This matrix has the following properties:</p>
+<p>Koko loves to eat bananas. There are <code>n</code> piles of bananas, the <code>i<sup>th</sup></code> pile has <code>piles[i]</code> bananas. The guards have gone and will come back in <code>h</code> hours.</p>
 
-<ul>
-	<li>Integers in each row are sorted in ascending from left to right.</li>
-	<li>Integers in each column are sorted in ascending from top to bottom.</li>
-</ul>
+<p>Koko can decide her bananas-per-hour eating speed of <code>k</code>. Each hour, she chooses some pile of bananas and eats <code>k</code> bananas from that pile. If the pile has less than <code>k</code> bananas, she eats all of them instead and will not eat any more bananas during this hour.</p>
+
+<p>Koko likes to eat slowly but still wants to finish eating all the bananas before the guards return.</p>
+
+<p>Return <em>the minimum integer</em> <code>k</code> <em>such that she can eat all the bananas within</em> <code>h</code> <em>hours</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/11/24/searchgrid2.jpg" style="width: 300px; height: 300px;" />
+
 <pre>
-<strong>Input:</strong> matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 5
-<strong>Output:</strong> true
+<strong>Input:</strong> piles = [3,6,7,11], h = 8
+<strong>Output:</strong> 4
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/11/24/searchgrid.jpg" style="width: 300px; height: 300px;" />
+
 <pre>
-<strong>Input:</strong> matrix = [[1,4,7,11,15],[2,5,8,12,19],[3,6,9,16,22],[10,13,14,17,24],[18,21,23,26,30]], target = 20
-<strong>Output:</strong> false
+<strong>Input:</strong> piles = [30,11,23,4,20], h = 5
+<strong>Output:</strong> 30
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> piles = [30,11,23,4,20], h = 6
+<strong>Output:</strong> 23
 </pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>m == matrix.length</code></li>
-	<li><code>n == matrix[i].length</code></li>
-	<li><code>1 &lt;= n, m &lt;= 300</code></li>
-	<li><code>-10<sup>9</sup> &lt;= matrix[i][j] &lt;= 10<sup>9</sup></code></li>
-	<li>All the integers in each row are <strong>sorted</strong> in ascending order.</li>
-	<li>All the integers in each column are <strong>sorted</strong> in ascending order.</li>
-	<li><code>-10<sup>9</sup> &lt;= target &lt;= 10<sup>9</sup></code></li>
+	<li><code>1 &lt;= piles.length &lt;= 10<sup>4</sup></code></li>
+	<li><code>piles.length &lt;= h &lt;= 10<sup>9</sup></code></li>
+	<li><code>1 &lt;= piles[i] &lt;= 10<sup>9</sup></code></li>
 </ul>
 
 
