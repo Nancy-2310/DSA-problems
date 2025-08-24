@@ -1,54 +1,27 @@
-# Find Minimum in Rotated Sorted Array (Medium)
+# Single Element in a Sorted Array (Medium)
 
 ---
 
-<p>Suppose an array of length <code>n</code> sorted in ascending order is <strong>rotated</strong> between <code>1</code> and <code>n</code> times. For example, the array <code>nums = [0,1,2,4,5,6,7]</code> might become:</p>
+<p>You are given a sorted array consisting of only integers where every element appears exactly twice, except for one element which appears exactly once.</p>
 
-<ul>
-	<li><code>[4,5,6,7,0,1,2]</code> if it was rotated <code>4</code> times.</li>
-	<li><code>[0,1,2,4,5,6,7]</code> if it was rotated <code>7</code> times.</li>
-</ul>
+<p>Return <em>the single element that appears only once</em>.</p>
 
-<p>Notice that <strong>rotating</strong> an array <code>[a[0], a[1], a[2], ..., a[n-1]]</code> 1 time results in the array <code>[a[n-1], a[0], a[1], a[2], ..., a[n-2]]</code>.</p>
-
-<p>Given the sorted rotated array <code>nums</code> of <strong>unique</strong> elements, return <em>the minimum element of this array</em>.</p>
-
-<p>You must write an algorithm that runs in&nbsp;<code>O(log n) time</code>.</p>
+<p>Your solution must run in <code>O(log n)</code> time and <code>O(1)</code> space.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [3,4,5,1,2]
-<strong>Output:</strong> 1
-<strong>Explanation:</strong> The original array was [1,2,3,4,5] rotated 3 times.
+<pre><strong>Input:</strong> nums = [1,1,2,3,3,4,4,8,8]
+<strong>Output:</strong> 2
+</pre><p><strong class="example">Example 2:</strong></p>
+<pre><strong>Input:</strong> nums = [3,3,7,7,10,11,11]
+<strong>Output:</strong> 10
 </pre>
-
-<p><strong class="example">Example 2:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [4,5,6,7,0,1,2]
-<strong>Output:</strong> 0
-<strong>Explanation:</strong> The original array was [0,1,2,4,5,6,7] and it was rotated 4 times.
-</pre>
-
-<p><strong class="example">Example 3:</strong></p>
-
-<pre>
-<strong>Input:</strong> nums = [11,13,15,17]
-<strong>Output:</strong> 11
-<strong>Explanation:</strong> The original array was [11,13,15,17] and it was rotated 4 times. 
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>n == nums.length</code></li>
-	<li><code>1 &lt;= n &lt;= 5000</code></li>
-	<li><code>-5000 &lt;= nums[i] &lt;= 5000</code></li>
-	<li>All the integers of <code>nums</code> are <strong>unique</strong>.</li>
-	<li><code>nums</code> is sorted and rotated between <code>1</code> and <code>n</code> times.</li>
+	<li><code>1 &lt;= nums.length &lt;= 10<sup>5</sup></code></li>
+	<li><code>0 &lt;= nums[i] &lt;= 10<sup>5</sup></code></li>
 </ul>
 
 
