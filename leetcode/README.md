@@ -1,34 +1,29 @@
-# Longest Common Prefix (Easy)
+# Rotate String (Easy)
 
 ---
 
-<p>Write a function to find the longest common prefix string amongst an array of strings.</p>
+<p>Given two strings <code>s</code> and <code>goal</code>, return <code>true</code> <em>if and only if</em> <code>s</code> <em>can become</em> <code>goal</code> <em>after some number of <strong>shifts</strong> on</em> <code>s</code>.</p>
 
-<p>If there is no common prefix, return an empty string <code>&quot;&quot;</code>.</p>
+<p>A <strong>shift</strong> on <code>s</code> consists of moving the leftmost character of <code>s</code> to the rightmost position.</p>
+
+<ul>
+	<li>For example, if <code>s = &quot;abcde&quot;</code>, then it will be <code>&quot;bcdea&quot;</code> after one shift.</li>
+</ul>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-
-<pre>
-<strong>Input:</strong> strs = [&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;]
-<strong>Output:</strong> &quot;fl&quot;
+<pre><strong>Input:</strong> s = "abcde", goal = "cdeab"
+<strong>Output:</strong> true
+</pre><p><strong class="example">Example 2:</strong></p>
+<pre><strong>Input:</strong> s = "abcde", goal = "abced"
+<strong>Output:</strong> false
 </pre>
-
-<p><strong class="example">Example 2:</strong></p>
-
-<pre>
-<strong>Input:</strong> strs = [&quot;dog&quot;,&quot;racecar&quot;,&quot;car&quot;]
-<strong>Output:</strong> &quot;&quot;
-<strong>Explanation:</strong> There is no common prefix among the input strings.
-</pre>
-
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= strs.length &lt;= 200</code></li>
-	<li><code>0 &lt;= strs[i].length &lt;= 200</code></li>
-	<li><code>strs[i]</code> consists of only lowercase English letters if it is non-empty.</li>
+	<li><code>1 &lt;= s.length, goal.length &lt;= 100</code></li>
+	<li><code>s</code> and <code>goal</code> consist of lowercase English letters.</li>
 </ul>
 
 
