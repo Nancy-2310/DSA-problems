@@ -1,49 +1,42 @@
-# Linked List Cycle II (Medium)
+# Longest Substring Without Repeating Characters (Medium)
 
 ---
 
-<p>Given the <code>head</code> of a linked list, return <em>the node where the cycle begins. If there is no cycle, return </em><code>null</code>.</p>
-
-<p>There is a cycle in a linked list if there is some node in the list that can be reached again by continuously following the <code>next</code> pointer. Internally, <code>pos</code> is used to denote the index of the node that tail&#39;s <code>next</code> pointer is connected to (<strong>0-indexed</strong>). It is <code>-1</code> if there is no cycle. <strong>Note that</strong> <code>pos</code> <strong>is not passed as a parameter</strong>.</p>
-
-<p><strong>Do not modify</strong> the linked list.</p>
+<p>Given a string <code>s</code>, find the length of the <strong>longest</strong> <span data-keyword="substring-nonempty"><strong>substring</strong></span> without duplicate characters.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist.png" style="height: 145px; width: 450px;" />
+
 <pre>
-<strong>Input:</strong> head = [3,2,0,-4], pos = 1
-<strong>Output:</strong> tail connects to node index 1
-<strong>Explanation:</strong> There is a cycle in the linked list, where tail connects to the second node.
+<strong>Input:</strong> s = &quot;abcabcbb&quot;
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> The answer is &quot;abc&quot;, with the length of 3.
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test2.png" style="height: 105px; width: 201px;" />
+
 <pre>
-<strong>Input:</strong> head = [1,2], pos = 0
-<strong>Output:</strong> tail connects to node index 0
-<strong>Explanation:</strong> There is a cycle in the linked list, where tail connects to the first node.
+<strong>Input:</strong> s = &quot;bbbbb&quot;
+<strong>Output:</strong> 1
+<strong>Explanation:</strong> The answer is &quot;b&quot;, with the length of 1.
 </pre>
 
 <p><strong class="example">Example 3:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2018/12/07/circularlinkedlist_test3.png" style="height: 65px; width: 65px;" />
+
 <pre>
-<strong>Input:</strong> head = [1], pos = -1
-<strong>Output:</strong> no cycle
-<strong>Explanation:</strong> There is no cycle in the linked list.
+<strong>Input:</strong> s = &quot;pwwkew&quot;
+<strong>Output:</strong> 3
+<strong>Explanation:</strong> The answer is &quot;wke&quot;, with the length of 3.
+Notice that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring.
 </pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li>The number of the nodes in the list is in the range <code>[0, 10<sup>4</sup>]</code>.</li>
-	<li><code>-10<sup>5</sup> &lt;= Node.val &lt;= 10<sup>5</sup></code></li>
-	<li><code>pos</code> is <code>-1</code> or a <strong>valid index</strong> in the linked-list.</li>
+	<li><code>0 &lt;= s.length &lt;= 5 * 10<sup>4</sup></code></li>
+	<li><code>s</code> consists of English letters, digits, symbols and spaces.</li>
 </ul>
-
-<p>&nbsp;</p>
-<p><strong>Follow up:</strong> Can you solve it using <code>O(1)</code> (i.e. constant) memory?</p>
 
 
  📝 Notes 
