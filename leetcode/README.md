@@ -1,38 +1,42 @@
-# Binary Subarrays With Sum (Medium)
+# Count Number of Nice Subarrays (Medium)
 
 ---
 
-<p>Given a binary array <code>nums</code> and an integer <code>goal</code>, return <em>the number of non-empty <strong>subarrays</strong> with a sum</em> <code>goal</code>.</p>
+<p>Given an array of integers <code>nums</code> and an integer <code>k</code>. A continuous subarray is called <strong>nice</strong> if there are <code>k</code> odd numbers on it.</p>
 
-<p>A <strong>subarray</strong> is a contiguous part of the array.</p>
+<p>Return <em>the number of <strong>nice</strong> sub-arrays</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
 <pre>
-<strong>Input:</strong> nums = [1,0,1,0,1], goal = 2
-<strong>Output:</strong> 4
-<strong>Explanation:</strong> The 4 subarrays are bolded and underlined below:
-[<u><strong>1,0,1</strong></u>,0,1]
-[<u><strong>1,0,1,0</strong></u>,1]
-[1,<u><strong>0,1,0,1</strong></u>]
-[1,0,<u><strong>1,0,1</strong></u>]
+<strong>Input:</strong> nums = [1,1,2,1,1], k = 3
+<strong>Output:</strong> 2
+<strong>Explanation:</strong> The only sub-arrays with 3 odd numbers are [1,1,2,1] and [1,2,1,1].
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
 
 <pre>
-<strong>Input:</strong> nums = [0,0,0,0,0], goal = 0
-<strong>Output:</strong> 15
+<strong>Input:</strong> nums = [2,4,6], k = 1
+<strong>Output:</strong> 0
+<strong>Explanation:</strong> There are no odd numbers in the array.
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
+
+<pre>
+<strong>Input:</strong> nums = [2,2,2,1,2,2,1,2,2,2], k = 2
+<strong>Output:</strong> 16
 </pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li><code>1 &lt;= nums.length &lt;= 3 * 10<sup>4</sup></code></li>
-	<li><code>nums[i]</code> is either <code>0</code> or <code>1</code>.</li>
-	<li><code>0 &lt;= goal &lt;= nums.length</code></li>
+	<li><code>1 &lt;= nums.length &lt;= 50000</code></li>
+	<li><code>1 &lt;= nums[i] &lt;= 10^5</code></li>
+	<li><code>1 &lt;= k &lt;= nums.length</code></li>
 </ul>
 
 
