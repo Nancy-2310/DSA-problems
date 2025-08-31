@@ -1,8 +1,8 @@
-# Binary Tree Preorder Traversal (Easy)
+# Binary Tree Inorder Traversal (Easy)
 
 ---
 
-<p>Given the <code>root</code> of a binary tree, return <em>the preorder traversal of its nodes&#39; values</em>.</p>
+<p>Given the <code>root</code> of a binary tree, return <em>the inorder traversal of its nodes&#39; values</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -10,7 +10,7 @@
 <div class="example-block">
 <p><strong>Input:</strong> <span class="example-io">root = [1,null,2,3]</span></p>
 
-<p><strong>Output:</strong> <span class="example-io">[1,2,3]</span></p>
+<p><strong>Output:</strong> <span class="example-io">[1,3,2]</span></p>
 
 <p><strong>Explanation:</strong></p>
 
@@ -22,7 +22,7 @@
 <div class="example-block">
 <p><strong>Input:</strong> <span class="example-io">root = [1,2,3,4,5,null,8,null,null,6,7,9]</span></p>
 
-<p><strong>Output:</strong> <span class="example-io">[1,2,4,5,6,7,3,8,9]</span></p>
+<p><strong>Output:</strong> <span class="example-io">[4,2,6,5,7,1,3,9,8]</span></p>
 
 <p><strong>Explanation:</strong></p>
 
@@ -54,8 +54,7 @@
 </ul>
 
 <p>&nbsp;</p>
-<p><strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?</p>
-
+<strong>Follow up:</strong> Recursive solution is trivial, could you do it iteratively?
 
  📝 Notes 
  ---
