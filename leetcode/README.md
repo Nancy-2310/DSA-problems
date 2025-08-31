@@ -1,8 +1,8 @@
-# Binary Tree Inorder Traversal (Easy)
+# Binary Tree Postorder Traversal (Easy)
 
 ---
 
-<p>Given the <code>root</code> of a binary tree, return <em>the inorder traversal of its nodes&#39; values</em>.</p>
+<p>Given the <code>root</code> of a&nbsp;binary tree, return <em>the postorder traversal of its nodes&#39; values</em>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
@@ -10,7 +10,7 @@
 <div class="example-block">
 <p><strong>Input:</strong> <span class="example-io">root = [1,null,2,3]</span></p>
 
-<p><strong>Output:</strong> <span class="example-io">[1,3,2]</span></p>
+<p><strong>Output:</strong> <span class="example-io">[3,2,1]</span></p>
 
 <p><strong>Explanation:</strong></p>
 
@@ -22,7 +22,7 @@
 <div class="example-block">
 <p><strong>Input:</strong> <span class="example-io">root = [1,2,3,4,5,null,8,null,null,6,7,9]</span></p>
 
-<p><strong>Output:</strong> <span class="example-io">[4,2,6,5,7,1,3,9,8]</span></p>
+<p><strong>Output:</strong> <span class="example-io">[4,6,7,5,2,9,8,3,1]</span></p>
 
 <p><strong>Explanation:</strong></p>
 
@@ -49,7 +49,7 @@
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li>The number of nodes in the tree is in the range <code>[0, 100]</code>.</li>
+	<li>The number of the nodes in the tree is in the range <code>[0, 100]</code>.</li>
 	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
 
