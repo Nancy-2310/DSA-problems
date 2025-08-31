@@ -1,32 +1,37 @@
-# Maximum Depth of Binary Tree (Easy)
+# Balanced Binary Tree (Easy)
 
 ---
 
-<p>Given the <code>root</code> of a binary tree, return <em>its maximum depth</em>.</p>
-
-<p>A binary tree&#39;s <strong>maximum depth</strong>&nbsp;is the number of nodes along the longest path from the root node down to the farthest leaf node.</p>
+<p>Given a binary tree, determine if it is <span data-keyword="height-balanced"><strong>height-balanced</strong></span>.</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/11/26/tmp-tree.jpg" style="width: 400px; height: 277px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/06/balance_1.jpg" style="width: 342px; height: 221px;" />
 <pre>
 <strong>Input:</strong> root = [3,9,20,null,null,15,7]
-<strong>Output:</strong> 3
+<strong>Output:</strong> true
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
+<img alt="" src="https://assets.leetcode.com/uploads/2020/10/06/balance_2.jpg" style="width: 452px; height: 301px;" />
+<pre>
+<strong>Input:</strong> root = [1,2,2,3,3,null,null,4,4]
+<strong>Output:</strong> false
+</pre>
+
+<p><strong class="example">Example 3:</strong></p>
 
 <pre>
-<strong>Input:</strong> root = [1,null,2]
-<strong>Output:</strong> 2
+<strong>Input:</strong> root = []
+<strong>Output:</strong> true
 </pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li>The number of nodes in the tree is in the range <code>[0, 10<sup>4</sup>]</code>.</li>
-	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
+	<li>The number of nodes in the tree is in the range <code>[0, 5000]</code>.</li>
+	<li><code>-10<sup>4</sup> &lt;= Node.val &lt;= 10<sup>4</sup></code></li>
 </ul>
 
 
