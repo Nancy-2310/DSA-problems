@@ -1,39 +1,37 @@
-# Same Tree (Easy)
+# Binary Tree Zigzag Level Order Traversal (Medium)
 
 ---
 
-<p>Given the roots of two binary trees <code>p</code> and <code>q</code>, write a function to check if they are the same or not.</p>
-
-<p>Two binary trees are considered the same if they are structurally identical, and the nodes have the same value.</p>
+<p>Given the <code>root</code> of a binary tree, return <em>the zigzag level order traversal of its nodes&#39; values</em>. (i.e., from left to right, then right to left for the next level and alternate between).</p>
 
 <p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/12/20/ex1.jpg" style="width: 622px; height: 182px;" />
+<img alt="" src="https://assets.leetcode.com/uploads/2021/02/19/tree1.jpg" style="width: 277px; height: 302px;" />
 <pre>
-<strong>Input:</strong> p = [1,2,3], q = [1,2,3]
-<strong>Output:</strong> true
+<strong>Input:</strong> root = [3,9,20,null,null,15,7]
+<strong>Output:</strong> [[3],[20,9],[15,7]]
 </pre>
 
 <p><strong class="example">Example 2:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/12/20/ex2.jpg" style="width: 382px; height: 182px;" />
+
 <pre>
-<strong>Input:</strong> p = [1,2], q = [1,null,2]
-<strong>Output:</strong> false
+<strong>Input:</strong> root = [1]
+<strong>Output:</strong> [[1]]
 </pre>
 
 <p><strong class="example">Example 3:</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/12/20/ex3.jpg" style="width: 622px; height: 182px;" />
+
 <pre>
-<strong>Input:</strong> p = [1,2,1], q = [1,1,2]
-<strong>Output:</strong> false
+<strong>Input:</strong> root = []
+<strong>Output:</strong> []
 </pre>
 
 <p>&nbsp;</p>
 <p><strong>Constraints:</strong></p>
 
 <ul>
-	<li>The number of nodes in both trees is in the range <code>[0, 100]</code>.</li>
-	<li><code>-10<sup>4</sup> &lt;= Node.val &lt;= 10<sup>4</sup></code></li>
+	<li>The number of nodes in the tree is in the range <code>[0, 2000]</code>.</li>
+	<li><code>-100 &lt;= Node.val &lt;= 100</code></li>
 </ul>
 
 
